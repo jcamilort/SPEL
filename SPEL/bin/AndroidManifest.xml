@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.proyectogrado"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="20" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".ProyGradActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PushValidationActivity"
+            android:label="Test" >
+        </activity>
+        <activity
+            android:name=".CrearEventoActivity"
+            android:label="@string/crear_evento_name" />
+        <activity
+            android:name=".MapActivity"
+            android:label="Map" />
+        <activity
+            android:name="com.example.testing.LocationFinderActivity"
+            android:label="Location Test" />
+        
+        <!--
+         <activity
+            android:name="com.example.broadcasting.AnnouncerLocalEventos"
+            android:label="Broadcaster" />
+        -->
+
+        <receiver android:name="com.example.broadcasting.AnnouncerLocalEventos" >
+            <intent-filter>
+                <action android:name="com.example.broadcasting.BroadcastConstants.INCOMING_EVENT_FOR_VALIDATION" />
+                <action android:name="com.example.broadcasting.BroadcastConstants.EVENT_FOR_REGISTER" />
+                <action android:name="com.example.broadcasting.BroadcastConstants.EVENT_VALIDATED" />
+                <action android:name="com.example.broadcasting.BroadcastConstants.EVENT_REGISTERED" />
+                <action android:name="com.example.broadcasting.BroadcastConstants.EVENT_FOR_VALIDATION" />
+                <action android:name="com.example.broadcasting.BroadcastConstants.EVENT_FOR_VALIDATION_DIALOG" />
+                <action android:name="com.example.broadcasting.BroadcastConstants.EVENT_SAVE_FOR_LATER_DISPATCH" />
+"
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.example.geoloc.LocationFinder"
+            android:label="@string/location_finder" />
+        <service
+            android:name="com.example.geoloc.GPSLocation"
+            android:label="@string/gps_location" />
+        <service
+            android:name="com.example.geoloc.RangeService"
+            android:label="@string/range_service" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAB5FUGt3ehNrl0WzsSG3n2YD3hkJKr2bw" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

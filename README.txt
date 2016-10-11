@@ -1,0 +1,1 @@
+Esta carpeta contiene el proyecto correspondiente a la aplicación móvil. Para abrirla, impórtela desde eclipse Android, incluido en este DVD.

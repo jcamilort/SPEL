@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ProyectoGrado</string>
+    <string name="crear_evento_name">Reportar un Nuevo Evento</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	
+    <string name="new_event_activity">Reportar Eventos</string>
+        
+    <string name="user_name">User Name</string>
+    
+    <string name="nuevo_evento_tab">Nuevo Reporte</string>
+    <string name="location_test_tab">Test</string>
+    
+    <string name="new_event_donde">¿En dónde es?</string>
+    <string name="new_event_cuanto">¿Cuánto crees que dure?</string>
+    <string name="new_event_tipo">Selecciona el tipo de evento:</string>
+    
+    <string name="location_finder">Location Finder</string>
+    <string name="gps_location">GPS</string>
+    <string name="range_service">Beacons</string>
+    
+    <string name="no_loggeado">No has hecho login, ¿deseas ingresar?</string>
+    <string name="no_loggeado_login">Login uniandes:</string>
+    <string name="no_loggeado_password">Contraseña:</string>
+    <string name="no_loggeado_nickname">Nickname:</string>
+    
+    
+    
+    <string name="login_button">Ingresar</string>
+    <string name="main_instrucciones">Elige en la barra superior la acción que quieres realizar</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="neutral">Ignorar</string>
+    <string name="validacion_ok">Si existe</string>
+    <string name="validacion_cancel">No existe</string>
+    <string name="validacion_neutral">No lo se</string>
+</resources>

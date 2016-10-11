@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_nuevo_evento"
+        android:showAsAction="always"
+        android:title="@string/nuevo_evento_tab"/>
+    
+    <item
+        android:id="@+id/location_testing"
+        android:showAsAction="always"
+        android:title="@string/location_test_tab"/>
+</menu> 
